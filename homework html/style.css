@@ -1,0 +1,23 @@
+h1{color:rgba(7, 153, 153, 0.774);
+    font-size: 100px;
+        
+
+}
+img     { width: 400px;
+   
+
+}
+h3  {color:rgba(233, 219, 18, 0.918);
+font-size: 45px;
+}
+#thirDiv { 
+    WIDTH: 500px;  
+    height:600px;
+    padding:  50px;
+    border: solid black 50px;
+
+}
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+}
