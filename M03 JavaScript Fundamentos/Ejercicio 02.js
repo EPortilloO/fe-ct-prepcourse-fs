@@ -10,8 +10,7 @@ function devolverString(string) {
 
 // ⛔️ "X" e "Y" son números.
 
- x = 5;
- y = 3;
+
 
 function suma(x , y) {
    // Retorna el resultado de su suma.
