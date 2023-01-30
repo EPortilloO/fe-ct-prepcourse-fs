@@ -180,12 +180,12 @@ function mesesDelAño(array) {
          nuevoArray.push(array[i]);      
           }
       }       
-   { if (nuevoArray.Length < 3)  {
-      return "No se encontraron los meses pedidos"
+    if (nuevoArray.length < 3)  {
+      return "No se encontraron los meses pedidos";
    } else    {
       return nuevoArray;
     }
-   }  }
+}
 
 
 
@@ -227,28 +227,17 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
-   var deDos = [ ];
-   var suma = num;
-   var i = 0;
-   for (let i = 0; i< 10; i++)   {
-      suma = suma +2 ;
-      if (i === suma) 
-      break;   
-      else     {
-         deDos.push(suma);
-      }
-   };
-     if (i < 10) {
- return "Se interrumpió la ejecución"; 
-     }
-    else       {
-   return deDos;
- }
-      }
+   let arr = [];
+  for (let i = 0; i < 10; i++) {
+   let newNum = num + (i+1) * 2;
+    if (newNum === 10) {
+      return 'Se interrumpió la ejecución';
+    }
+    arr.push(newNum); 
+  }
+  return arr;
+}
 
-
-
- 
   
 function continueStatement(num) {
    // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
@@ -257,14 +246,15 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
-   var array = [ ]
-   var suma = num
+   var array = [ ];
+   var suma = num;
    for (let i = 0; i< 10; i++)   {
-      if (i === 5) 
-      continue ;
+      if (i === 5)   {
+         continue;
+        }
       else  {
          suma = suma + 2;
-         array.push(suma);
+         array.push(suma);   
       }
          }
          return array;
